@@ -21,4 +21,4 @@
 - -in: Database input path. Each attribute must be separated between tabs, with a first line of attribute names.
 
 
-*Source coming soon...*
+*Built with 'gradle distZip'*
