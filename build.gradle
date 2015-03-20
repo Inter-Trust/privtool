@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility=1.6
+mainClassName = "cat.urv.intertrust.main.Main"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-math3:3.3'
+}
+
+
+
+jar {
+	def mancp = configurations.runtime.collect { it.getName() }.join(',')
+	manifest {
+		attributes (
+			"Main-Class" : "cat.urv.intertrust.main.Main",
+			"Class-Path" : mancp
+		)
+	}
+}
+
