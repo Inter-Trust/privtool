@@ -14,8 +14,8 @@
 	- java -jar intertrust.jar -noise 2 1.5 -in database.txt
 
 ### Usage Parameters:
--help: Show this usage.
--reslos: Modifies resolution of the position. {pos1 pos2 ... posN res}.
--approx: Approximates to N decimal digits. {pos1 pos2 ... posN N}.
--noise: Adds gausian noise. It requires as arguments mean and variance.
--in: Database input path. Each attribute must be separated between tabs, with a first line of attribute names.
+- -help: Show this usage.
+- -reslos: Modifies resolution of the position. {pos1 pos2 ... posN res}.
+- -approx: Approximates to N decimal digits. {pos1 pos2 ... posN N}.
+- -noise: Adds gausian noise. It requires as arguments mean and variance.
+- -in: Database input path. Each attribute must be separated between tabs, with a first line of attribute names.
